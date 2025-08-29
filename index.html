@@ -1,46 +1,75 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <title>RGV's Creation</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="RGV.jpg" />
-  </head>
-  <body>
-   <header>
-      <div class="container">
-        <h1>Welcome to RGV's Creation</h1>
-      </div>
-   </header>
-   <center>
-    <h2>MY PROJECTS</h2>
-   <div id="button-container">
-    <a href="https://rgv225255.github.io/clock/">
-   <button type="button" class="btn btn-outline-primary">Clock</button>
-  </a>
-  <a href="https://rgv225255.github.io/calc/">
-   <button type="button" class="btn btn-outline-secondary">Calculator</button>
-  </a>
-  <a href="https://rgv225255.github.io/color-craft/">
-   <button type="button" class="btn btn-outline-success">Color Craft</button>
-  </a>
-  <a href="https://rgv225255.github.io/tic-tac-toe/">
-   <button type="button" class="btn btn-outline-danger">Tic Tac Toe</button>
-  </a>
-  <a href="https://rgv225255.github.io/weather-report/">
-   <button type="button" class="btn btn-outline-warning">Weather Report</button>
-  </a>
-  <a href="https://rgv225255.github.io/space-system/">
-   <button type="button" class="btn btn-outline-info">Space System</button>
-  </a>
-  <a href="https://www.instagram.com/accounts/login/?next=%2Fr_g_v_101%2F&source=omni_redirect">
-   <button type="button" class="btn btn-outline-light">insta id</button>
-  </a>
-  <a href="#">
-   <button type="button" class="btn btn-outline-dark">Dark</button>
-  </a>
-</div>
-</center>
+   <head>
+      <title>color craft</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+   </head>
+
+    <body>
+       <div id="main">
+            <center><h1 id="head">Color Craft</h1></center>
+          <div id ="container">
+            <div id="text-color">
+                <h1>Text Color</h1>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; row-gap: 15px; column-gap: 20px;">
+                    <button  style="background-color: red;" onclick="changeTextColor('red')">Red</button>
+                    <button  style="background-color: green;" onclick="changeTextColor('green')">Green</button>
+                    <button  style="background-color: blue;" onclick="changeTextColor('blue')">Blue</button>
+                    <button  style="background-color: yellow;" onclick="changeTextColor('yellow')">Yellow</button>
+                    <button  style="background-color: purple;" onclick="changeTextColor('purple')">Purple</button>
+                    <button  style="background-color: orange;" onclick="changeTextColor('orange')">Orange</button>
+                    <button  style="background-color: pink;" onclick="changeTextColor('pink')">Pink</button>
+                    <button  style="background-color: cyan;" onclick="changeTextColor('cyan')">Cyan</button>
+                    <button  style="background-color: black;" onclick="changeTextColor('black')">Black</button>
+                    <button  style="background-color: white;" onclick="changeTextColor('white')">White</button>
+                </div>
+                </div>
+                <div id ="background-color">
+                <h1>Background Color</h1>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; row-gap: 15px; column-gap: 20px;">
+                    <button style="background-color: red;" onclick="changeBackgroundColor('red')">Red</button>
+                    <button style="background-color: green;" onclick="changeBackgroundColor('green')">Green</button>
+                    <button style="background-color: blue;" onclick="changeBackgroundColor('blue')">Blue</button>
+                    <button style="background-color: yellow;" onclick="changeBackgroundColor('yellow')">Yellow</button>
+                    <button style="background-color: purple;" onclick="changeBackgroundColor('purple')">Purple</button>
+                    <button style="background-color: orange;" onclick="changeBackgroundColor('orange')">Orange</button>
+                    <button style="background-color: pink;" onclick="changeBackgroundColor('pink')">Pink</button>
+                    <button style="background-color: cyan;" onclick="changeBackgroundColor('cyan')">Cyan</button>
+                    <button style="background-color: black;" onclick="changeBackgroundColor('black')">Black</button>
+                    <button style="background-color: white;" onclick="changeBackgroundColor('white')">White</button>
+            </div>
+          </div>
+          <div id ="Background-image">
+            <h1>Background Image</h1>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; row-gap: 15px; column-gap: 20px;">
+                <button style="background-image: url('bg1.jpg');" onclick="changeBackgroundImage('bg1.jpg')">Image 1</button>
+                <button style="background-image: url('bg2.jpg');" onclick="changeBackgroundImage('bg2.jpg')">Image 2</button>
+                <button style="background-image: url('bg3.jpg');" onclick="changeBackgroundImage('bg3.jpg')">Image 3</button>
+                <button style="background-image: url('bg4.jpg');" onclick="changeBackgroundImage('bg4.jpg')">Image 4</button>
+                <button style="background-image: url('bg5.jpg');" onclick="changeBackgroundImage('bg5.jpg')">Image 5</button>
+                <button style="background-image: url('bg6.jpg');" onclick="changeBackgroundImage('bg6.jpg')">Image 6</button>
+                <button style="background-image: url('pexels-pixabay-355288.jpg');" onclick="changeBackgroundImage('pexels-pixabay-355288.jpg')">Image 7</button>
+                <button style="background-image: url('bg8.jpg');" onclick="changeBackgroundImage('bg8.jpg')">Image 8</button>
+                <button style="background-image: url('bg9.jpg');" onclick="changeBackgroundImage('bg9.jpg')">Image 9</button>
+                <button style="background-image: url('bg10.jpg');" onclick="changeBackgroundImage('bg10.jpg')">Image 10</button>
+            </div>
+          </div>
+          </div>
+          <form>
+          <div id="text-editor">
+               <h1 name=" KRACK" id="text" contenteditable="true" style="width: 500px; height: 600px; border: 1px solid black; padding: 5px; font-size: 20px; text-align: center; border-radius: 20px; overflow: hidden; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+                you can type here...
+            </h1>
+          </div>
+          </form>
+          <div>
+            <button onclick="downloadImage()" style="height: 50px ; width: 100px; padding: 10px; background-color: blue; color: wheat; border: none; border-radius: 20px; color:black;">download</button>
+          </div>
+         </div>
+         <a href="https://api.weatherapi.com/v1/current.json?key=412b492bf8de4497ae193119252801&q="><button id="back">BACK</button></a>
+
+         <script src="script.js"></script>
+
+    
 </body>
 </html>
